@@ -1,0 +1,25 @@
+/*
+    red:    #FF5349
+    blue:   #4F80E1
+    green:  #f0f0f1
+    purple: #292C44
+    black:  #302D33
+*/
+.red    {
+    background-color: #FF5349;
+}
+.blue   {
+    background-color: #4F80E1;
+}
+.green  {
+    background-color: #f0f0f1;
+}
+.purple {
+    background-color: #292C44;
+}
+.black  {
+    background-color: #302D33;
+}
+.ligth-text{
+    color: #f0f0f1;
+}
