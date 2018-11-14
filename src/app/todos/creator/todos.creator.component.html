@@ -1,4 +1,10 @@
-<div class="lateral-padding">
+<div class="text-right">
+    <button type="button" class="large-padding pointer no-background ligth-text" (click)="toggleForm()">
+        {{label()}} 
+        <i class="fa {{icon()}}"></i>
+    </button>
+</div>
+<div class="lateral-padding overflow-hidden" [@openClose]="formState">
     <input [(ngModel)]="todo.content" type="text" placeholder="(?)" class="form-control" required min="3"> 
     <textarea  [(ngModel)]="todo.description" placeholder="Opcional..." class="form-control"></textarea>
     <div class="top-space">

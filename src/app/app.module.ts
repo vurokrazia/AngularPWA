@@ -20,6 +20,9 @@ import { FormsModule } from '@angular/forms';
 import { ListService } from './services/lists.services';
 import { ListComponent } from './lists/list.component';
 import { TodoCreatorComponent } from './todos/creator/todos.creator.component';
+import { TodoService } from './services/todo.services';
+import { TodoCardComponent } from './todos/card/todo.card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,8 @@ import { TodoCreatorComponent } from './todos/creator/todos.creator.component';
     LoginComponent,
     ListCreatorComponent,
     ListComponent,
-    TodoCreatorComponent
+    TodoCreatorComponent,
+    TodoCardComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'my-app'}),
@@ -37,9 +41,10 @@ import { TodoCreatorComponent } from './todos/creator/todos.creator.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
-  providers: [AuthService, AuthGuard, UserService, ListService ],
+  providers: [AuthService, AuthGuard, UserService, ListService, TodoService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
