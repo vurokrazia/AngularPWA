@@ -1,17 +1,21 @@
 /*
     red:    #FF5349
     blue:   #4F80E1
-    green:  #f0f0f1
+    grey:  #f0f0f1
     purple: #292C44
     black:  #302D33
 */
+body{
+    background-color: #292C44;
+    color:              #f0f0f1;
+}
 .red    {
     background-color: #FF5349;
 }
 .blue   {
     background-color: #4F80E1;
 }
-.green  {
+.grey  {
     background-color: #f0f0f1;
 }
 .purple {
@@ -21,5 +25,14 @@
     background-color: #302D33;
 }
 .ligth-text{
+    color: #f0f0f1;
+}
+.card{
+    background-color: #f0f0f1;
+    color: #302D33;
+}
+
+.card.with-badge .badge span{
+    background-color: #FF5349;
     color: #f0f0f1;
 }

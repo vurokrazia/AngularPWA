@@ -1,6 +1,6 @@
-export interface IUser{
+export interface IUser {
     name    ?:  string;
-    uid     :   string;
-    email   :   string;
+    uid:   string;
+    email:   string;
     bio     ?:  string;
 }

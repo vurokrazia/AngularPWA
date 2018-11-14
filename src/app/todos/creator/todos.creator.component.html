@@ -1,0 +1,10 @@
+<div class="lateral-padding">
+    <input [(ngModel)]="todo.content" type="text" placeholder="(?)" class="form-control" required min="3"> 
+    <textarea  [(ngModel)]="todo.description" placeholder="Opcional..." class="form-control"></textarea>
+    <div class="top-space">
+        <button (click)="save()" class="btn blue ligth-text full-width">
+            <i class="fa fa-save"></i>
+            Guardar
+        </button>
+    </div>
+</div>
